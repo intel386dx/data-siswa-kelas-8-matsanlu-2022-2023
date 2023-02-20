@@ -22,6 +22,11 @@ SELECT * FROM kelas_8;
 
 6. Tabel akan segera dicetak pada terminal.
 
+Integritas berkas dapat dipastikan dengan kode hash SHA-3 berikut:
+```
+42af3142893be36c68d7ce168edd7a4e71193c2ae391ee603d38dd28
+```
+
 ## English (United States) [en-US]
 
 This is an SQLite database file containing all grade 8 student data of MTsN 1 Lumajang
@@ -42,3 +47,9 @@ SELECT * from kelas_8;
 ```
 
 5. The table will be printed on the terminal soon.
+
+The integrity of the file can be verified with the following SHA-3 hash code:
+```
+42af3142893be36c68d7ce168edd7a4e71193c2ae391ee603d38dd28
+```
+
