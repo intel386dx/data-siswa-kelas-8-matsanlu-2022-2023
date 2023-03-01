@@ -20,6 +20,32 @@ Untuk melihat berkas ini, berasumsikan bahwa Anda menggunakan Windows:
 .\sqlite3 -table d:/kelas_8.dat "SELECT * from kelas_8;" > D:\tabel.txt
 ```
 
+Bila Anda sedang di Linux atau Termux:
+1. Pertama-tama perbarui daftar paket dengan mengetik:
+```
+sudo apt update
+```
+2. Sekarang unduh dan pasang SQLite dengan mengetikkan perintah dibawah. Sebuah paket terkompres yang akan diunduh hanya sekitar 1 megabyte, jadi kuota data Anda tidak terkuras habis.
+```
+sudo apt install sqlite
+```
+3. [DUnduh berkas database](https://raw.githubusercontent.com/intel386dx/data-siswa-kelas-8-matsanlu-2022-2023/main/kelas_8.dat) dengan mengetik:
+```
+curl https://raw.githubusercontent.com/intel386dx/data-siswa-kelas-8-matsanlu-2022-2023/main/kelas_8.dat -o kelas_8.dat
+```
+4. Sekarang ketikkan perintah ini untuk mencetak database dalam bentuk tabel ke terminal.
+```
+.\sqlite3 -table d:/kelas_8.dat "SELECT * from kelas_8;"
+```
+
+5. Tabel akan segera dicetak pada terminal. Anda juga bisa menambahkan tanda lebih-dari, diikuti dengan nama berkas untuk menyimpan tabel yang dicetak. Contohnya, untuk menyimpan tabel yang dicetak kedalam sebuah berkas bernama "tabel.txt" pada _drive_ ``D:``, ketikkan seperti ini:
+```
+.\sqlite3 -table d:/kelas_8.dat "SELECT * from kelas_8;" > D:\tabel.txt
+```
+>
+> **Catatan:** Anda dapat menghilangkan perintah ``sudo`` di Termux karena tidak memerlukan _superuser_ untuk memperbarui dan memasang paket.
+>
+
 Integritas berkas dapat dipastikan dengan kode hash SHA-3 berikut:
 ```
 42af3142893be36c68d7ce168edd7a4e71193c2ae391ee603d38dd28
@@ -43,6 +69,32 @@ To view this file, assuming that you're using Windows:
 ```
 .\sqlite3 -table d:/kelas_8.dat "SELECT * from kelas_8;" > D:\table.txt
 ```
+
+If you're on Linux or Termux:
+1. First update the package list by typing this command:
+```
+sudo apt update
+```
+2. Now download and install SQLite by typing the command below. It downloads a small, compressed package that is about 1 megabytes, so it won't break your data plan.
+```
+sudo apt install sqlite
+```
+3. [Download the database file](https://raw.githubusercontent.com/intel386dx/data-siswa-kelas-8-matsanlu-2022-2023/main/kelas_8.dat) by typing:
+```
+curl https://raw.githubusercontent.com/intel386dx/data-siswa-kelas-8-matsanlu-2022-2023/main/kelas_8.dat -o kelas_8.dat
+```
+4. Now type this command to print the database as a tabular data onto the terminal.
+```
+.\sqlite3 -table d:/kelas_8.dat "SELECT * from kelas_8;"
+```
+
+5. The table will be printed on the terminal soon. You can append a greater-than sign, followed by a file name to save the printed table. For example, to save the printed table to a file named "table.txt" at the drive ``D:``, type like this:
+```
+.\sqlite3 -table d:/kelas_8.dat "SELECT * from kelas_8;" > D:\table.txt
+```
+>
+> **Note:** You can omit the ``sudo`` command in Termux because it doesn't need a superuser account to update and install packages.
+>
 
 The file integrity can be verified with the following SHA-3 hash code:
 ```
