@@ -29,7 +29,7 @@ sudo apt update
 ```
 sudo apt install sqlite
 ```
-3. [DUnduh berkas database](https://raw.githubusercontent.com/intel386dx/data-siswa-kelas-8-matsanlu-2022-2023/main/kelas_8.dat) dengan mengetik:
+3. [Unduh berkas database](https://raw.githubusercontent.com/intel386dx/data-siswa-kelas-8-matsanlu-2022-2023/main/kelas_8.dat) dengan mengetik:
 ```
 curl https://raw.githubusercontent.com/intel386dx/data-siswa-kelas-8-matsanlu-2022-2023/main/kelas_8.dat -o kelas_8.dat
 ```
